@@ -2,6 +2,7 @@ import QrScanner from "../plugins/qrScanner/qrScanner.min.js";
 
 document.getElementById("timestamp").textContent = Date().toString();
 let srNumber = 1;
+const audioBeep = new Audio("./sounds/BarcodeScannerBeepSound.mp3");
 
 function setQRDetail(qrData)
 {
@@ -11,7 +12,7 @@ function setQRDetail(qrData)
 
 function qrAlert()
 {
-    new Audio("./sounds/BarcodeScannerBeepSound.mp3").play();
+    audioBeep.play();
     navigator.vibrate(200);
 }
     
