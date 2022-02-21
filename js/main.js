@@ -11,7 +11,7 @@ function setQRDetail(qrData)
 
 function qrAlert()
 {
-    new Audio("../sounds/BarcodeScannerBeepSound.mp3").play();
+    new Audio("./sounds/BarcodeScannerBeepSound.mp3").play();
     navigator.vibrate(200);
 }
     
